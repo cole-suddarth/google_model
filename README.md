@@ -37,7 +37,10 @@ After analyzing different algorithms, we chose deep neural networks and linear r
 The dataset was split into training and testing sets. We used RMSE Loss to select the best model. 
 - The models were assessed based on RMSE, producing the following results:
   - LSTM: 2.0684333178996384
+  - ![image](https://github.com/CSC380-SU23-UofArizona/final-project-cole-suddarth/assets/87513908/8560aa1f-853e-456a-9b27-0a09f06b0e13)
   - Lasso: 4.602423987158262
+  - ![image](https://github.com/CSC380-SU23-UofArizona/final-project-cole-suddarth/assets/87513908/0f432ac7-8cab-450f-a9d0-4c0cf587ad5c)
+
 
 ## Results and Conclusion
 Based on the evaluation,  I aimed to determine the expected Adjusted Close of the GOOG ticker given information on GOOG open, high, low as well as similar information from tickers like MSFT, NFLX, and AAPL. In this, I decided to use a dataset containing information on a GOOG, MSFT, NFLX, AAPL and their Open, Close, Adj Close, High, Low, and Volume over a three month period. Over observing this dataset we found that their is a strong correlation between GOOG features and the features for the other tickers. In determining a model for this, I chose to use a Lasso Regression and a LSTM neural network model. After training the models, I found that the LSTM neural network worked best to predict the Adjusted Close of the GOOG ticker. In order to pick the best model, I used the RMSE as we are along a time-based prediction. When tested I found that the LSTM model gave an accurate price to within 2.07 USD, while the Lasso model gave an accurate prediction to within 4.60 USD. Given that the mean value is 100.63 USD, this gives us an accuracy of right around 2 percent. In the future, I would like to use a larger dataset with more dates.
@@ -51,6 +54,4 @@ It is essential to acknowledge the limitations of our approach and the dataset. 
 
 ## Acknowledgments
 We would like to express our gratitude to the owner of this dataset.
-
-![image](https://github.com/CSC380-SU23-UofArizona/final-project-cole-suddarth/assets/87513908/8560aa1f-853e-456a-9b27-0a09f06b0e13)
 
