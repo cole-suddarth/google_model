@@ -19,6 +19,7 @@ For this analysis, we used the Stock Market Performance Case Study dataset(https
 To ensure data quality and suitability for modeling, we performed the following preprocessing steps:
 - Created individual DataFrames for each company, and a combined one for our modelling
 - Scaled our data using the MinMaxScaler between 0 and 1 for normalization
+- Due to the limited data set, the data was also shuffled before splitting into our training, validation, and testing sets
 
 ## Feature Selection/Engineering
 We conducted feature selection/engineering to improve model performance. The selected features were:
@@ -42,10 +43,11 @@ The dataset was split into training and testing sets. We used RMSE Loss to selec
 Based on the evaluation,  I aimed to determine the expected Adjusted Close of the GOOG ticker given information on GOOG open, high, low as well as similar information from tickers like MSFT, NFLX, and AAPL. In this, I decided to use a dataset containing information on a GOOG, MSFT, NFLX, AAPL and their Open, Close, Adj Close, High, Low, and Volume over a three month period. Over observing this dataset we found that their is a strong correlation between GOOG features and the features for the other tickers. In determining a model for this, I chose to use a Lasso Regression and a LSTM neural network model. After training the models, I found that the LSTM neural network worked best to predict the Adjusted Close of the GOOG ticker. In order to pick the best model, I used the RMSE as we are along a time-based prediction. When tested I found that the LSTM model gave an accurate price to within 2.07 USD, while the Lasso model gave an accurate prediction to within 4.60 USD. Given that the mean value is 100.63 USD, this gives us an accuracy of right around 2 percent. In the future, I would like to use a larger dataset with more dates.
 
 ## Future Recommendations
-- For future work, we recommend adding more data and features for other stocks, as well as things such as moving avreage to further enhance the model's performance and achieve even better results.
+- For future work, we recommend adding more data and features for other stocks, as more time would allow us to use the date functions that are so important in stock prediction.
+- If we add in other factors such as moving average, we can create an even better model and potentially even add in less thought about economic factors such as unemployment rate.
 
 ## Limitations
-It is essential to acknowledge the limitations of our approach and the dataset. Some limitations include limited data, limited computing abilities.
+It is essential to acknowledge the limitations of our approach and the dataset. Some limitations include limited data, this is an extremely important one as time is often an important aspect of stock prediction, and in order to create a better model we need more dates so that the time has a stronger factor and allows for a better fitting model.
 
 ## Acknowledgments
 We would like to express our gratitude to the owner of this dataset.
