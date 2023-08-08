@@ -2,10 +2,10 @@
 # Project Title
 
 ## Objective
-In this data science project, our main goal was to [briefly describe the project objective, e.g., predict customer churn, classify sentiment, recommend products, etc.]. Use images if you would like to make this more aesthetic to look at. 
+In this data science project, our main goal was to determine Google's adjusted close given information surrounding days, such as Volume, Open, Close, High, Low and similar ticker information such as Netflix, Microsoft, Apple.
 
 ## Dataset
-For this analysis, we used the [insert name and source of the dataset]. The dataset contains [briefly describe the data, including important features].
+For this analysis, we used the (https://www.kaggle.com/datasets/bhanupratapbiswas/stock-market-performance-case-study). The dataset that is going to be used for this project features stock market information for four companies, Apple, Microsoft, Netflix and Google. It features a three month data range where every open market day has the companies open, close, high, low, and adjusted close stock price for the period. It also features the volume of trades for that day(how many shares are traded). This is public data which can be found by exploring pretty much any finance site as all of these numbers are public knowledge and checked across multiple platforms. This dataset was last updated in May and therefore features data from February 7th to May 5th of 2023. Given this dataset the plan is to determine the expected adjusted close stock price for one company Google. We will create a model to determine this value given the opening price, highs, lows, and volume traded for both Google and also the other three companies as their is expected to be correlation due to being in the same industry. It would be more beneficial to have a wider range of dates for this model, however this range should be enough to create a valid model to determine expected stock closing price.
 
 ## Data Exploration and Insights
 - During the exploration phase, we observed [mention any key insights or interesting patterns you discovered in the data].
